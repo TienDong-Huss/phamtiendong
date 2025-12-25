@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryption & Cryptography - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Encryption & Cryptography Fundamentals</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 12 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>Mã Hóa và Tầm Quan Trọng</h2>
+                <p>Mã hóa (Encryption) là quá trình chuyển đổi dữ liệu từ dạng có thể đọc được (plaintext) thành dạng không thể đọc được (ciphertext) bằng cách sử dụng các khóa mã hóa.</p>
+
+                <h2>Các Loại Mã Hóa</h2>
+                <h3>Symmetric Encryption (Mã Hóa Đối Xứng):</h3>
+                <ul>
+                    <li>Sử dụng cùng một khóa để mã hóa và giải mã</li>
+                    <li>Nhanh và hiệu quả</li>
+                    <li>Thách thức: chia sẻ khóa an toàn</li>
+                    <li>Ví dụ: AES, DES, 3DES</li>
+                </ul>
+
+                <h3>Asymmetric Encryption (Mã Hóa Bất Đối Xứng):</h3>
+                <ul>
+                    <li>Sử dụng cặp khóa: public key và private key</li>
+                    <li>Chậm hơn symmetric nhưng an toàn hơn</li>
+                    <li>Giải quyết vấn đề chia sẻ khóa</li>
+                    <li>Ví dụ: RSA, ECC, DH</li>
+                </ul>
+
+                <h2>Các Thuật Toán Phổ Biến</h2>
+                <h3>AES (Advanced Encryption Standard):</h3>
+                <p>Tiêu chuẩn mã hóa của Mỹ, được sử dụng rộng rãi:</p>
+                <ul>
+                    <li>Độ dài khóa: 128, 192, 256 bit</li>
+                    <li>Block size: 128 bit</li>
+                    <li>Rất an toàn và nhanh</li>
+                </ul>
+
+                <h3>RSA:</h3>
+                <p>Thuật toán mã hóa công khai phổ biến nhất:</p>
+                <ul>
+                    <li>Dựa trên khó khăn của việc phân tích số lớn</li>
+                    <li>Khóa thường là 2048 bit hoặc lớn hơn</li>
+                    <li>Chủ yếu dùng cho trao đổi khóa và chữ ký số</li>
+                </ul>
+
+                <h2>Hash Functions</h2>
+                <p>Hash function là một hàm một chiều chuyển đổi bất kỳ đầu vào nào thành một chuỗi ký tự có độ dài cố định.</p>
+                <ul>
+                    <li><strong>Tính chất:</strong> Một chiều, xác định, nhanh, tránh va chạm</li>
+                    <li><strong>Ứng dụng:</strong> Xác minh tính toàn vẹn, lưu mật khẩu, chữ ký số</li>
+                    <li><strong>Ví dụ:</strong> MD5 (không nên dùng), SHA-1, SHA-256</li>
+                </ul>
+
+                <h2>Hybrid Encryption</h2>
+                <p>Kết hợp cả symmetric và asymmetric encryption:</p>
+                <ol>
+                    <li>Tạo session key (symmetric)</li>
+                    <li>Mã hóa dữ liệu bằng session key</li>
+                    <li>Mã hóa session key bằng public key của người nhận</li>
+                    <li>Gửi cả dữ liệu mã hóa và session key mã hóa</li>
+                </ol>
+
+                <h2>Protocols Sử Dụng Cryptography</h2>
+                <ul>
+                    <li><strong>HTTPS/TLS:</strong> Mã hóa dữ liệu truyền trên web</li>
+                    <li><strong>SSH:</strong> Kết nối an toàn từ xa</li>
+                    <li><strong>IPSec:</strong> Mã hóa ở tầng network</li>
+                    <li><strong>PGP:</strong> Mã hóa email</li>
+                </ul>
+
+                <h2>Best Practices</h2>
+                <ul>
+                    <li>Luôn sử dụng các thuật toán hiện đại (AES, RSA-2048+)</li>
+                    <li>Tránh sử dụng MD5 và SHA-1</li>
+                    <li>Quản lý khóa an toàn</li>
+                    <li>Sử dụng random number generators chất lượng cao</li>
+                    <li>Cập nhật thuật toán khi có lỗ hổng mới</li>
+                </ul>
+
+                <h2>Kết Luận</h2>
+                <p>Mã hóa là nền tảng của bảo mật hiện đại. Hiểu rõ các nguyên tắc của cryptography giúp xây dựng các hệ thống an toàn hơn.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">Cryptography</span>
+                    <span class="tag">Encryption</span>
+                    <span class="tag">Security</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Password Security</h3>
+                            <p>Sử dụng mã hóa để lưu trữ mật khẩu an toàn với hashing algorithms.</p>
+                            <a href="password-security.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>VPN & Secure Communication</h3>
+                            <p>Mã hóa dữ liệu truyền qua VPN và các giao thức an toàn.</p>
+                            <a href="vpn-secure-communication.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Zero Trust Security</h3>
+                            <p>Mã hóa là nền tảng của mô hình Zero Trust Security.</p>
+                            <a href="zero-trust-security.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPN & Secure Communication - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>VPN & Secure Communication Protocols</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 17 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 10 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>VPN là Gì?</h2>
+                <p>VPN (Virtual Private Network) là một công nghệ tạo ra một kết nối mã hóa an toàn qua internet công cộng, cho phép người dùng truyền dữ liệu một cách riêng tư.</p>
+
+                <h2>Tại Sao Cần Sử Dụng VPN?</h2>
+                <ul>
+                    <li>Bảo vệ quyền riêng tư trực tuyến</li>
+                    <li>Mã hóa dữ liệu truyền trên internet công cộng</li>
+                    <li>Truy cập an toàn vào mạng công ty từ xa</li>
+                    <li>Bypass địa chỉ địa lý hoặc kiểm duyệt</li>
+                    <li>Bảo vệ khỏi tấn công MITM (Man-in-the-Middle)</li>
+                </ul>
+
+                <h2>Các Loại VPN</h2>
+                <h3>Remote Access VPN:</h3>
+                <p>Cho phép người dùng cá nhân kết nối an toàn vào mạng công ty từ xa</p>
+                <ul>
+                    <li>Sử dụng VPN client trên máy tính/điện thoại</li>
+                    <li>Phổ biến cho làm việc từ xa</li>
+                </ul>
+
+                <h3>Site-to-Site VPN:</h3>
+                <p>Kết nối hai hoặc nhiều mạng nội bộ qua internet</p>
+                <ul>
+                    <li>Thường sử dụng firewall hoặc gateway</li>
+                    <li>Phổ biến cho công ty có nhiều chi nhánh</li>
+                </ul>
+
+                <h2>VPN Protocols</h2>
+                <h3>IPSec (IP Security):</h3>
+                <ul>
+                    <li>Tiêu chuẩn mã hóa ở tầng network</li>
+                    <li>Hoạt động với IPv4 và IPv6</li>
+                    <li>Có hai chế độ: Transport và Tunnel</li>
+                    <li>Được sử dụng rộng rãi trong enterprise</li>
+                </ul>
+
+                <h3>TLS/SSL VPN:</h3>
+                <ul>
+                    <li>Sử dụng SSL/TLS protocol (như HTTPS)</li>
+                    <li>Có thể truy cập qua web browser</li>
+                    <li>Không cần cài đặt VPN client</li>
+                    <li>Phù hợp cho remote access</li>
+                </ul>
+
+                <h3>WireGuard:</h3>
+                <ul>
+                    <li>Giao thức VPN hiện đại</li>
+                    <li>Code tương đối ngắn và đơn giản</li>
+                    <li>Hiệu suất cao</li>
+                    <li>Đang phát triển nhanh</li>
+                </ul>
+
+                <h3>OpenVPN:</h3>
+                <ul>
+                    <li>Mã nguồn mở</li>
+                    <li>Sử dụng OpenSSL</li>
+                    <li>Linh hoạt và an toàn</li>
+                    <li>Có sẵn cho nhiều nền tảng</li>
+                </ul>
+
+                <h2>VPN Architecture</h2>
+                <ol>
+                    <li><strong>VPN Client:</strong> Phần mềm chạy trên máy người dùng</li>
+                    <li><strong>VPN Server/Gateway:</strong> Máy chủ nhận kết nối</li>
+                    <li><strong>Encryption:</strong> Mã hóa dữ liệu</li>
+                    <li><strong>Authentication:</strong> Xác minh danh tính</li>
+                    <li><strong>Tunneling:</strong> Bao gói dữ liệu</li>
+                </ol>
+
+                <h2>VPN vs Proxy</h2>
+                <table style="width:100%; border-collapse: collapse;">
+                    <tr style="border: 1px solid #ccc;">
+                        <th style="border: 1px solid #ccc; padding: 10px;">VPN</th>
+                        <th style="border: 1px solid #ccc; padding: 10px;">Proxy</th>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Mã hóa toàn bộ traffic</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Chỉ reroute traffic</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Hoạt động ở tầng network</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Hoạt động ở tầng application</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Bảo vệ toàn bộ kết nối</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Bảo vệ ứng dụng</td>
+                    </tr>
+                </table>
+
+                <h2>Best Practices VPN</h2>
+                <ul>
+                    <li>Sử dụng encryption mạnh (AES-256)</li>
+                    <li>Bật MFA cho VPN access</li>
+                    <li>Giám sát kết nối VPN</li>
+                    <li>Cập nhật VPN client định kỳ</li>
+                    <li>Cấp quyền least privilege</li>
+                    <li>Kiểm tra split tunneling policy</li>
+                </ul>
+
+                <h2>Kết Luận</h2>
+                <p>VPN là công cụ thiết yếu trong thời đại làm việc từ xa. Việc chọn đúng VPN protocol và cấu hình đúng sẽ đảm bảo an toàn và hiệu suất tối ưu.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">VPN</span>
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Encryption</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Encryption & Cryptography</h3>
+                            <p>Hiểu về mã hóa sử dụng trong VPN protocols.</p>
+                            <a href="encryption-cryptography.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Firewall & Network Security</h3>
+                            <p>Cấu hình firewall cho VPN connections an toàn.</p>
+                            <a href="firewall-security.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Zero Trust Security</h3>
+                            <p>VPN và secure communication là cơ sở của Zero Trust.</p>
+                            <a href="zero-trust-security.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

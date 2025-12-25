@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N8N - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ARTICLE -->
+    <article class="blog-article">
+        <div class="article-header">
+            <h1>N8N: Công Cụ Tự Động Hóa Workflow Không Cần Code</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 22 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 11 phút đọc</span>
+            </div>
+            <div class="article-tags">
+                <span>#N8N</span>
+                <span>#Automation</span>
+                <span>#Workflow</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <h2>Giới Thiệu Về N8N</h2>
+            <p>N8N là một nền tảng tự động hóa workflow mã nguồn mở, cho phép bạn tạo các quy trình làm việc phức tạp mà không cần phải viết mã. Với giao diện trực quan và thư viện tích hợp sẵn hơn 400 ứng dụng, N8N giúp bạn tăng năng suất và giảm công việc thủ công.</p>
+
+            <h2>Tại Sao Cần Tự Động Hóa Workflow?</h2>
+            <p>Nhiều công việc hàng ngày của chúng ta lặp đi lặp lại và tốn thời gian. Bằng cách tự động hóa những công việc này, chúng ta có thể:</p>
+            <ul>
+                <li>Tiết kiệm thời gian và công sức</li>
+                <li>Giảm lỗi nhân sự</li>
+                <li>Tăng hiệu suất làm việc</li>
+                <li>Tập trung vào các nhiệm vụ có giá trị cao hơn</li>
+            </ul>
+
+            <h2>Các Tính Năng Chính Của N8N</h2>
+            
+            <h3>1. Giao Diện Kéo và Thả (Drag-and-Drop Interface)</h3>
+            <p>N8N cung cấp một giao diện trực quan cho phép bạn tạo workflows bằng cách kéo và thả các node. Không cần phải hiểu biết về lập trình.</p>
+
+            <h3>2. Thư Viện Tích Hợp Rộng Lớn</h3>
+            <p>N8N có tích hợp sẵn hơn 400 ứng dụng và dịch vụ phổ biến như:</p>
+            <ul>
+                <li>Email (Gmail, Outlook)</li>
+                <li>Cloud Storage (Dropbox, Google Drive)</li>
+                <li>CRM (Salesforce, HubSpot)</li>
+                <li>Slack, Microsoft Teams</li>
+                <li>Splunk, Elasticsearch</li>
+                <li>Và nhiều ứng dụng khác</li>
+            </ul>
+
+            <h3>3. Scheduling và Triggers</h3>
+            <p>Bạn có thể lên lịch cho workflows chạy theo thời gian nhất định hoặc kích hoạt chúng dựa trên các sự kiện cụ thể.</p>
+
+            <h3>4. Error Handling</h3>
+            <p>N8N cho phép bạn xử lý lỗi một cách linh hoạt, đảm bảo rằng workflows của bạn hoạt động đáng tin cậy.</p>
+
+            <h2>Các Trường Hợp Sử Dụng</h2>
+            
+            <h3>1. Tự Động Hóa Bảo Mật</h3>
+            <p>Sử dụng N8N để tự động hóa các quy trình bảo mật như:</p>
+            <ul>
+                <li>Gửi cảnh báo bảo mật qua email hoặc Slack</li>
+                <li>Tạo tiếp thị sự cố tự động</li>
+                <li>Tích hợp với Splunk, Wazuh để nhận cảnh báo</li>
+            </ul>
+
+            <h3>2. Tự Động Hóa Quy Trình Kinh Doanh</h3>
+            <p>Tự động hóa các quy trình kinh doanh hàng ngày như:</p>
+            <ul>
+                <li>Gửi email tự động</li>
+                <li>Tạo báo cáo từ dữ liệu</li>
+                <li>Đồng bộ hóa dữ liệu giữa các hệ thống</li>
+            </ul>
+
+            <h3>3. Tích Hợp Dữ Liệu</h3>
+            <p>Sử dụng N8N để tích hợp dữ liệu từ nhiều nguồn khác nhau vào một hệ thống tập trung.</p>
+
+            <h2>Bắt Đầu Với N8N</h2>
+            
+            <h3>Bước 1: Cài Đặt N8N</h3>
+            <p>Bạn có thể cài đặt N8N bằng Docker hoặc npm:</p>
+            <p><code>docker run -d --name n8n -p 5678:5678 n8nio/n8n</code></p>
+
+            <h3>Bước 2: Truy Cập Giao Diện Web</h3>
+            <p>Mở trình duyệt và truy cập http://localhost:5678</p>
+
+            <h3>Bước 3: Tạo Workflow Đầu Tiên</h3>
+            <p>Bắt đầu bằng cách tạo một workflow đơn giản. Ví dụ: tạo workflow gửi email thông báo khi nhận được request.</p>
+
+            <h3>Bước 4: Kiểm Thử và Triển Khai</h3>
+            <p>Kiểm thử workflow của bạn để đảm bảo nó hoạt động đúng, sau đó triển khai nó.</p>
+
+            <h2>Ví Dụ Thực Tế</h2>
+            <p>Dưới đây là một ví dụ về cách sử dụng N8N để tự động hóa thông báo cảnh báo bảo mật:</p>
+            <ol>
+                <li>Tạo một webhook trong N8N</li>
+                <li>Cấu hình Splunk hoặc Wazuh để gửi cảnh báo đến webhook này</li>
+                <li>Trong N8N, tạo một workflow để xử lý cảnh báo và gửi thông báo qua Slack hoặc email</li>
+                <li>Lên lịch cho workflow chạy liên tục</li>
+            </ol>
+
+            <h2>Kết Luận</h2>
+            <p>N8N là một công cụ mạnh mẽ cho tự động hóa workflows không cần code. Với giao diện trực quan, thư viện tích hợp rộng lớn, và khả năng mở rộng, N8N là lựa chọn tuyệt vời cho các tổ chức muốn tự động hóa các quy trình của mình và tăng hiệu suất.</p>
+        </div>
+
+        <!-- RELATED POSTS -->
+        <section class="related-posts">
+            <h2>Bài Blog Liên Quan</h2>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h3>Splunk vs Wazuh: So Sánh</h3>
+                    <p>So sánh chi tiết hai công cụ SIEM hàng đầu Splunk và Wazuh để giúp bạn chọn giải pháp phù hợp.</p>
+                    <a href="splunk.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>Wazuh: Nền Tảng XDR</h3>
+                    <p>Khám phá Wazuh - công cụ SIEM mạnh mẽ với khả năng XDR và tự động hóa bằng N8N.</p>
+                    <a href="wazuh.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>Zero Trust Security Model</h3>
+                    <p>Tìm hiểu mô hình Zero Trust và cách tự động hóa nó bằng N8N.</p>
+                    <a href="zero-trust-security.html">Đọc Tiếp →</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="article-navigation">
+            <a href="blog.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Quay Lại Blog</a>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>SOC Engineer & Security Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym?locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firewall Configuration & Best Practices - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Firewall Configuration & Best Practices</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 20 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 8 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>Giới Thiệu về Firewall</h2>
+                <p>Firewall là một công cụ bảo mật cơ bản trong bất kỳ kiến trúc mạng nào. Nó hoạt động như một bức tường lửa ảo, kiểm soát lưu lượng truy cập giữa mạng nội bộ và internet.</p>
+
+                <h2>Các Loại Firewall</h2>
+                <ul>
+                    <li><strong>Packet Filtering Firewall:</strong> Kiểm tra từng gói dữ liệu dựa trên IP, Port</li>
+                    <li><strong>Stateful Firewall:</strong> Theo dõi trạng thái của kết nối</li>
+                    <li><strong>Application Layer Firewall (WAF):</strong> Bảo vệ ở tầng ứng dụng</li>
+                    <li><strong>Next-Generation Firewall (NGFW):</strong> Kết hợp nhiều tính năng bảo mật</li>
+                </ul>
+
+                <h2>Best Practices Cấu Hình Firewall</h2>
+                <ol>
+                    <li><strong>Deny by Default:</strong> Từ chối tất cả lưu lượng mặc định, chỉ cho phép những gì cần thiết</li>
+                    <li><strong>Rule Documentation:</strong> Ghi chép rõ ràng từng rule và lý do</li>
+                    <li><strong>Regular Audits:</strong> Kiểm tra định kỳ các rule cũ không còn sử dụng</li>
+                    <li><strong>Logging & Monitoring:</strong> Ghi log tất cả các hoạt động bị từ chối</li>
+                    <li><strong>Segmentation:</strong> Chia mạng thành các zone khác nhau</li>
+                </ol>
+
+                <h2>Ví Dụ Cấu Hình Cơ Bản</h2>
+                <pre><code># Allow HTTPS traffic
+allow in proto tcp from any to any port 443
+
+# Allow DNS
+allow in proto udp from any to any port 53
+
+# Block P2P
+block in proto tcp from any to any port 6881:6889
+
+# Allow SSH từ subnet nhất định
+allow in proto tcp from 192.168.1.0/24 to any port 22</code></pre>
+
+                <h2>Kết Luận</h2>
+                <p>Firewall là tuyến phòng thủ đầu tiên nhưng không phải là giải pháp duy nhất. Kết hợp firewall với các công cụ bảo mật khác như IDS/IPS, SIEM sẽ tạo thành một hệ thống bảo vệ toàn diện.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">Firewall</span>
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Best Practices</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Network Monitoring & IDS/IPS</h3>
+                            <p>Tìm hiểu về giám sát mạng, IDS/IPS và cách phát hiện các mối đe dọa trên mạng.</p>
+                            <a href="network-monitoring.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Zero Trust Security Model</h3>
+                            <p>Tìm hiểu mô hình Zero Trust và cách triển khai nó trong kiến trúc bảo mật hiện đại.</p>
+                            <a href="zero-trust-security.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>VPN & Secure Communication</h3>
+                            <p>Khám phá VPN, các protocol an toàn và cách bảo vệ kết nối mạng.</p>
+                            <a href="vpn-secure-communication.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

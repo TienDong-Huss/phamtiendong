@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự Án - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="projects.html" class="active">Dự Án</a></li>
+                <li><a href="blog/blog.html">Blog</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="page-header">
+        <h1>Các Dự Án Của Tôi</h1>
+        <p>Các dự án thực tế mà tôi đã phát triển và hoàn thành</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section">
+        <div class="section-container">
+            <!-- FILTER BUTTONS -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <!-- PROJECTS GRID -->
+            <div class="projects-full-grid">
+                <!-- Project 1 -->
+    
+
+                <!-- Project 2 -->
+                <div class="project-card-full" data-category="security">
+                    <div class="project-image-full">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wazuh XDR Implementation</h3>
+                        <p class="project-subtitle">Triển Khai Hệ Thống Phát Hiện & Phản Ứng Mối Đe Dọa</p>
+                        <p class="project-description">Triển khai Wazuh làm nền tảng XDR để giám sát toàn bộ hệ thống IT. Cấu hình các rule phát hiện mối đe dọa, vulnerability scanning, và compliance monitoring. Tích hợp Wazuh với các ứng dụng khác để tự động hóa quy trình phản ứng sự cố.</p>
+                        <div class="project-tags">
+                            <span>Wazuh</span>
+                            <span>XDR</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card-full" data-category="automation">
+                    <div class="project-image-full">
+                        <i class="fas fa-cogs"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Security Alert Automation N8N</h3>
+                        <p class="project-subtitle">Tự Động Hóa Quy Trình Xử Lý Cảnh Báo Bảo Mật</p>
+                        <p class="project-description">Xây dựng workflow N8N để tự động nhận cảnh báo từ Splunk/Wazuh, phân tích, và gửi thông báo qua email, Slack. Tích hợp với các hệ thống khác để tự động hóa quy trình phản ứng sự cố bảo mật, giảm thời gian phản ứng từ hàng giờ xuống hàng phút.</p>
+                        <div class="project-tags">
+                            <span>N8N</span>
+                            <span>Automation</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card-full" data-category="security">
+                    <div class="project-image-full">
+                        <i class="fas fa-search"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Splunk Log Analysis System</h3>
+                        <p class="project-subtitle">Hệ Thống Phân Tích Log Sử Dụng Splunk</p>
+                        <p class="project-description">Xây dựng hệ thống phân tích log toàn diện sử dụng Splunk. Cấu hình data sources, tạo custom dashboards, viết SPL queries phức tạp để phát hiện các mối đe dọa, tạo alerts, và generate reports theo định kỳ cho management.</p>
+                        <div class="project-tags">
+                            <span>Splunk</span>
+                            <span>SIEM</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-full" data-category="mobile">
+                    <div class="project-image-full">
+                        <i class="fas fa-comments"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ứng dụng nhắn tin MY CHAT</h3>
+                        <p class="project-subtitle">ứng dụng nhắn tin cá nhân</p>
+                        <p class="project-description">Một ứng dụng nhắn tin cá nhân giống zalo và đc phát triển bẳng flutter</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Mobile</span>
+                            <span>Chat</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-full" data-category="mobile">
+                    <div class="project-image-full">
+                        <i class="fas fa-futbol"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Hệ thống quản lý sân bóng đá</h3>
+                        <p class="project-subtitle">Hệ thống quản lý sân bóng đá</p>
+                        <p class="project-description">Một hệ thống quản lý sân bóng đá cho phép đặt sân, xem lịch sân, xem sân đã đặt,thời gian giá tiên</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Mobile</span>
+                            <span>Chat</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-full" data-category="web">
+                    <div class="project-image-full">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>WEBSITE bán thiết bị điện tử</h3>
+                        <p class="project-subtitle">Website bán thiết bị điện tử</p>
+                        <p class="project-description">Một website bán thiết bị điện tử với giao diện thân thiện và chức năng mua bán hiệu quả</p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>web</span>
+                        
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Project 6 -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+    <section class="certifications">
+        <div class="section-container">
+            <h2>Chứng Chỉ & Thành Tựu</h2>
+            
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/CTF.png" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>Cuộc Thi CTF</h3>
+                        <p class="cert-issuer">CTF</p>
+                        <p class="cert-date">2025</p>
+                        <p>CUỘC THI CTF - THE MAZE OF SHADOWS</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/HDBANK.png" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>Cuộc Thi HDBANK</h3>
+                        <p class="cert-issuer">HDBANK</p>
+                        <p class="cert-date">2024</p>
+                        <p>VÒNG SƠ LOẠI CUỘC THI HDBANK</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/SVTB.jpg" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>SINH VIÊN TIÊU BIỂU</h3>
+                        <p class="cert-issuer">SINH VIÊN TIÊU BIỂU</p>
+                        <p class="cert-date">2025</p>
+                        <p>ĐẠT DANH HIỆU SINH VIÊN TIÊU BIỂU</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/MANG.jpg" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>NETWORK BASICS</h3>
+                        <p class="cert-issuer">CISCO</p>
+                        <p class="cert-date">2025</p>
+                        <p>NETWORK BASICS</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/JAVAR1.jpg" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>JAVASCRIPT ESSENTIALS 1</h3>
+                        <p class="cert-issuer">CISCO</p>
+                        <p class="cert-date">2025</p>
+                        <p>JAVASCRIPT ESSENTIALS 1</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card-image">
+                        <img src="assets/img/JAVAR2.jpg" alt="Certificate" />
+                    </div>
+                    <div class="cert-card-content">
+                        <h3>JAVASCRIPT ESSENTIALS 2</h3>
+                        <p class="cert-issuer">CISCO</p>
+                        <p class="cert-date">2025</p>
+                        <p>JAVASCRIPT ESSENTIALS 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog/blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

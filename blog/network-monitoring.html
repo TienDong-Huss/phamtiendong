@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Monitoring & IDS - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Network Monitoring & Intrusion Detection Systems (IDS)</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 17 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 10 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>Tầm Quan Trọng của Network Monitoring</h2>
+                <p>Network monitoring là quá trình giám sát lưu lượng mạng để phát hiện các hoạt động bất thường và các mối đe dọa tiềm ẩn. Đây là một thành phần quan trọng trong chiến lược bảo mật của bất kỳ tổ chức nào.</p>
+
+                <h2>Intrusion Detection System (IDS)</h2>
+                <p>IDS là một hệ thống an ninh giám sát hoạt động mạng để phát hiện các dấu hiệu tấn công.</p>
+
+                <h3>Các Loại IDS:</h3>
+                <ul>
+                    <li><strong>NIDS (Network-based IDS):</strong> Giám sát toàn bộ lưu lượng mạng</li>
+                    <li><strong>HIDS (Host-based IDS):</strong> Giám sát hoạt động trên một máy tính cụ thể</li>
+                    <li><strong>Hybrid IDS:</strong> Kết hợp NIDS và HIDS</li>
+                </ul>
+
+                <h2>IDS vs IPS</h2>
+                <table style="width:100%; border-collapse: collapse;">
+                    <tr style="border: 1px solid #ccc;">
+                        <th style="border: 1px solid #ccc; padding: 10px;">IDS</th>
+                        <th style="border: 1px solid #ccc; padding: 10px;">IPS</th>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Phát hiện - Cảnh báo</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Phát hiện - Chặn</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Passive Mode</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Inline Mode</td>
+                    </tr>
+                </table>
+
+                <h2>Công Cụ Phổ Biến</h2>
+                <ul>
+                    <li><strong>Suricata:</strong> Công cụ IDS/IPS mã nguồn mở</li>
+                    <li><strong>Zeek (Bro):</strong> Framework phân tích traffic mạng</li>
+                    <li><strong>Snort:</strong> IDS phổ biến với rule database lớn</li>
+                    <li><strong>Wazuh:</strong> Platform SIEM với tính năng IDS tích hợp</li>
+                </ul>
+
+                <h2>Phương Pháp Phát Hiện</h2>
+                <h3>Signature-based Detection:</h3>
+                <p>So sánh lưu lượng với cơ sở dữ liệu các mẫu tấn công đã biết</p>
+
+                <h3>Anomaly-based Detection:</h3>
+                <p>Phát hiện các hành vi lệch khỏi mô hình bình thường bằng Machine Learning</p>
+
+                <h2>Best Practices</h2>
+                <ol>
+                    <li>Cập nhật rule định kỳ</li>
+                    <li>Điều chỉnh sensitivity để giảm false positives</li>
+                    <li>Kết hợp IDS với SIEM để có phân tích toàn diện</li>
+                    <li>Lập kế hoạch phản ứng sự cố (Incident Response)</li>
+                </ol>
+
+                <h2>Kết Luận</h2>
+                <p>Network monitoring và IDS là công cụ quan trọng trong arsenal bảo mật. Việc triển khai hiệu quả sẽ giúp phát hiện các mối đe dọa sớm và giảm thiểu thiệt hại.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">Network Security</span>
+                    <span class="tag">IDS/IPS</span>
+                    <span class="tag">Monitoring</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Splunk - Log Analysis</h3>
+                            <p>Sử dụng Splunk để phân tích network logs và phát hiện mối đe dọa.</p>
+                            <a href="splunk.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Wazuh - XDR Platform</h3>
+                            <p>Giám sát mạng với Wazuh và các khả năng detection nâng cao.</p>
+                            <a href="wazuh.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Incident Response</h3>
+                            <p>Phản ứng với các mối đe dọa được phát hiện thông qua network monitoring.</p>
+                            <a href="incident-response.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

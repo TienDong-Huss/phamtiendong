@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="page-header">
+        <h1>Blog Của Tôi</h1>
+        <p>Chia sẻ kiến thức về Security, Automation và Kinh Nghiệm Cá Nhân</p>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section">
+        <div class="section-container">
+            <!-- SEARCH & FILTER -->
+            <div class="blog-controls">
+                <input type="text" class="blog-search" placeholder="Tìm kiếm bài viết...">
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-category="all">Tất Cả</button>
+                    <button class="filter-btn" data-category="security">Security</button>
+                    <button class="filter-btn" data-category="automation">Automation</button>
+                    <button class="filter-btn" data-category="kinh-nghiem">Kinh Nghiệm</button>
+                </div>
+            </div>
+
+            <!-- BLOG POSTS GRID -->
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Splunk vs Wazuh: So Sánh Chi Tiết Hai Công Cụ SIEM Hàng Đầu</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 23 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Splunk và Wazuh là hai công cụ SIEM mạnh mẽ nhất hiện nay. Trong bài viết này, tôi sẽ so sánh chi tiết về tính năng, hiệu suất, và ứng dụng của chúng...</p>
+                        <div class="blog-tags">
+                            <span>#Splunk</span>
+                            <span>#Wazuh</span>
+                            <span>#Security</span>
+                        </div>
+                        <a href="splunk.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="automation">
+                    <div class="blog-image">
+                        <i class="fas fa-cogs"></i>
+                        <span class="blog-category">Automation</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>N8N: Công Cụ Tự Động Hóa Workflow Không Cần Code</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 22 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">N8N là một nền tảng tự động hóa workflow mạnh mẽ không yêu cầu kiến thức lập trình. Hãy khám phá cách sử dụng N8N để tăng hiệu suất công việc...</p>
+                        <div class="blog-tags">
+                            <span>#N8N</span>
+                            <span>#Automation</span>
+                            <span>#Workflow</span>
+                        </div>
+                        <a href="n8n.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-robot"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Wazuh: Nền Tảng XDR Toàn Diện Cho Bảo Mật</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 21 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Wazuh cung cấp các khả năng XDR toàn diện bao gồm phát hiện mối đe dọa, phản ứng tự động, và quản lý tuân thủ. Tìm hiểu thêm về Wazuh...</p>
+                        <div class="blog-tags">
+                            <span>#Wazuh</span>
+                            <span>#XDR</span>
+                            <span>#Security</span>
+                        </div>
+                        <a href="wazuh.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Phân Tích Log Bảo Mật Với Splunk: Hướng Dẫn Chi Tiết</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 28 Tháng 11, 2024</span>
+                        </p>
+                        <p class="blog-excerpt">Splunk là một công cụ mạnh mẽ cho phân tích log và phát hiện mối đe dọa. Học cách sử dụng Splunk để giám sát và phân tích logs bảo mật...</p>
+                        <div class="blog-tags">
+                            <span>#Splunk</span>
+                            <span>#LogAnalysis</span>
+                            <span>#Security</span>
+                        </div>
+                        <a href="splunk.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Firewall Configuration & Best Practices</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 20 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Firewall là công cụ bảo mật cơ bản. Tìm hiểu các loại firewall, best practices cấu hình và cách sử dụng hiệu quả để bảo vệ mạng...</p>
+                        <div class="blog-tags">
+                            <span>#Firewall</span>
+                            <span>#Network Security</span>
+                        </div>
+                        <a href="firewall-security.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-envelope"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Phishing Attacks & Prevention Strategies</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 19 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Phishing là hình thức tấn công phổ biến. Tìm hiểu các loại phishing attack, dấu hiệu nhận biết và chiến lược phòng chống hiệu quả...</p>
+                        <div class="blog-tags">
+                            <span>#Phishing</span>
+                            <span>#Email Security</span>
+                        </div>
+                        <a href="phishing-prevention.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-lock"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Password Security & Modern Authentication</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 18 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Mật khẩu mạnh và MFA là yếu tố quan trọng. Tìm hiểu cách tạo mật khẩu an toàn, hashing, authentication methods hiện đại...</p>
+                        <div class="blog-tags">
+                            <span>#Password</span>
+                            <span>#Authentication</span>
+                        </div>
+                        <a href="password-security.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-network-wired"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Network Monitoring & IDS/IPS</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 17 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Giám sát mạng và IDS/IPS là công cụ quan trọng. Tìm hiểu các loại IDS, phương pháp phát hiện threat, và tools phổ biến...</p>
+                        <div class="blog-tags">
+                            <span>#Network Security</span>
+                            <span>#IDS/IPS</span>
+                        </div>
+                        <a href="network-monitoring.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 10 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-virus"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Malware Analysis Basics & Tools</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 16 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Phân tích malware là kỹ năng quan trọng. Tìm hiểu các loại malware, phương pháp phân tích, tools và best practices...</p>
+                        <div class="blog-tags">
+                            <span>#Malware</span>
+                            <span>#Analysis</span>
+                        </div>
+                        <a href="malware-analysis.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 11 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-key"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Encryption & Cryptography Fundamentals</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Mã hóa là nền tảng bảo mật. Tìm hiểu các thuật toán mã hóa, hash functions, hybrid encryption và các protocols sử dụng...</p>
+                        <div class="blog-tags">
+                            <span>#Cryptography</span>
+                            <span>#Encryption</span>
+                        </div>
+                        <a href="encryption-cryptography.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 12 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-shield-virus"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Zero Trust Security Model</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Zero Trust là mô hình bảo mật hiện đại. Tìm hiểu 7 nguyên tắc, các thành phần chính, và cách triển khai Zero Trust...</p>
+                        <div class="blog-tags">
+                            <span>#Zero Trust</span>
+                            <span>#Security Architecture</span>
+                        </div>
+                        <a href="zero-trust-security.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 13 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Incident Response & Management</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">Incident Response là quy trình quan trọng. Tìm hiểu 6 giai đoạn IR, classification, best practices và cách chuẩn bị...</p>
+                        <div class="blog-tags">
+                            <span>#Incident Response</span>
+                            <span>#SOC</span>
+                        </div>
+                        <a href="incident-response.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 14 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-bug"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Vulnerability Assessment & Penetration Testing</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 16 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">VA và PT là hai quá trình bổ sung. Tìm hiểu sự khác biệt, quy trình, tools phổ biến và CVSS scoring...</p>
+                        <div class="blog-tags">
+                            <span>#Vulnerability</span>
+                            <span>#Penetration Testing</span>
+                        </div>
+                        <a href="vulnerability-assessment.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 15 -->
+                <article class="blog-card" data-category="security">
+                    <div class="blog-image">
+                        <i class="fas fa-globe"></i>
+                        <span class="blog-category">Security</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>VPN & Secure Communication Protocols</h3>
+                        <p class="blog-meta">
+                            <span class="author"><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                            <span class="date"><i class="fas fa-calendar"></i> 17 Thán 12, 2025</span>
+                        </p>
+                        <p class="blog-excerpt">VPN bảo vệ quyền riêng tư online. Tìm hiểu các loại VPN, protocols (IPSec, TLS, WireGuard), architecture và best practices...</p>
+                        <div class="blog-tags">
+                            <span>#VPN</span>
+                            <span>#Network Security</span>
+                        </div>
+                        <a href="vpn-secure-communication.html" class="read-more">Đọc Tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

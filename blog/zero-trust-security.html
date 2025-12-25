@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Trust Security Model - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Zero Trust Security Model - Modern Approach</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 10 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>Zero Trust là Gì?</h2>
+                <p>Zero Trust là một mô hình bảo mật hiện đại dựa trên nguyên tắc "Never Trust, Always Verify" (Không bao giờ tin tưởng, luôn xác minh). Thay vì tin tưởng mặc định vào các người dùng hoặc thiết bị bên trong mạng, Zero Trust yêu cầu xác minh cho mọi truy cập.</p>
+
+                <h2>Khác Biệt giữa Traditional và Zero Trust</h2>
+                <h3>Traditional Security (Perimeter-based):</h3>
+                <ul>
+                    <li>Tin tưởng tất cả bên trong firewall</li>
+                    <li>Một lần xác minh khi vào mạng</li>
+                    <li>Chậm thích ứng với các mối đe dọa mới</li>
+                </ul>
+
+                <h3>Zero Trust Security:</h3>
+                <ul>
+                    <li>Không tin tưởng ai, xác minh tất cả</li>
+                    <li>Kiểm tra liên tục khi truy cập tài nguyên</li>
+                    <li>Thích ứng nhanh với mối đe dọa</li>
+                </ul>
+
+                <h2>7 Nguyên Tắc Zero Trust</h2>
+                <ol>
+                    <li><strong>Verify Explicitly:</strong> Xác minh dựa trên tất cả dữ liệu có sẵn (identity, device, location)</li>
+                    <li><strong>Use Least Privileged Access:</strong> Cấp quyền tối thiểu cần thiết</li>
+                    <li><strong>Assume Breach:</strong> Giả định rằng hệ thống đã bị xâm phạm</li>
+                    <li><strong>Secure Every Access Point:</strong> Bảo mật mọi điểm truy cập</li>
+                    <li><strong>Monitor and Log Everything:</strong> Giám sát và ghi log tất cả hoạt động</li>
+                    <li><strong>Automate Response:</strong> Tự động hóa phản ứng sự cố</li>
+                    <li><strong>Encrypt All Data:</strong> Mã hóa tất cả dữ liệu</li>
+                </ol>
+
+                <h2>Các Thành Phần Chính</h2>
+                <h3>Identity & Access Management (IAM):</h3>
+                <ul>
+                    <li>Xác minh danh tính người dùng</li>
+                    <li>MFA (Multi-Factor Authentication)</li>
+                    <li>Single Sign-On (SSO)</li>
+                </ul>
+
+                <h3>Micro-segmentation:</h3>
+                <p>Chia mạng thành các segment nhỏ và kiểm soát truy cập giữa chúng</p>
+
+                <h3>Endpoint Security:</h3>
+                <ul>
+                    <li>Kiểm tra health của device trước khi cho phép truy cập</li>
+                    <li>Monitoring hoạt động endpoint</li>
+                    <li>EDR (Endpoint Detection & Response)</li>
+                </ul>
+
+                <h3>Data Protection:</h3>
+                <ul>
+                    <li>Mã hóa dữ liệu tại rest và in transit</li>
+                    <li>DLP (Data Loss Prevention)</li>
+                </ul>
+
+                <h2>Triển Khai Zero Trust</h2>
+                <ol>
+                    <li>Phát hiện tài nguyên quan trọng</li>
+                    <li>Xây dựng bản đồ traffic</li>
+                    <li>Xây dựng Zero Trust architecture</li>
+                    <li>Tạo Zero Trust policies</li>
+                    <li>Giám sát và tinh chỉnh liên tục</li>
+                </ol>
+
+                <h2>Lợi Ích của Zero Trust</h2>
+                <ul>
+                    <li>Giảm risk của data breach</li>
+                    <li>Phát hiện threats nhanh hơn</li>
+                    <li>Tuân thủ regulations tốt hơn</li>
+                    <li>Hỗ trợ remote work tốt hơn</li>
+                </ul>
+
+                <h2>Thách Thức</h2>
+                <ul>
+                    <li>Triển khai phức tạp</li>
+                    <li>Chi phí cao</li>
+                    <li>Cần thay đổi văn hóa tổ chức</li>
+                    <li>Cần kỹ năng bảo mật cao</li>
+                </ul>
+
+                <h2>Kết Luận</h2>
+                <p>Zero Trust không phải là một sản phẩm mà là một chiến lược bảo mật toàn diện. Trong thời đại làm việc từ xa và cloud computing, Zero Trust đang trở thành xu hướng thiết yếu.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">Zero Trust</span>
+                    <span class="tag">Security Architecture</span>
+                    <span class="tag">Best Practices</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Password Security & MFA</h3>
+                            <p>MFA là thành phần quan trọng trong Zero Trust architecture.</p>
+                            <a href="password-security.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Firewall & Micro-segmentation</h3>
+                            <p>Firewall cấu hình cho Zero Trust với micro-segmentation.</p>
+                            <a href="firewall-security.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Encryption & Cryptography</h3>
+                            <p>Mã hóa tất cả dữ liệu theo nguyên tắc Zero Trust.</p>
+                            <a href="encryption-cryptography.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incident Response & Management - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section class="blog-header">
+        <div class="blog-header-content">
+            <h1>Incident Response & Management</h1>
+            <div class="blog-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 15 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 11 phút đọc</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-content-section">
+        <div class="blog-container">
+            <article class="blog-article">
+                <h2>Incident Response là Gì?</h2>
+                <p>Incident Response (IR) là tập hợp các quy trình, công cụ và kỹ năng để phát hiện, phân tích, chứa, loại bỏ và phục hồi từ các sự cố bảo mật.</p>
+
+                <h2>Tại Sao Cần Incident Response?</h2>
+                <ul>
+                    <li>Giảm thiểu thời gian tấn công được phát hiện (MTTD)</li>
+                    <li>Giảm thời gian xử lý (MTTR)</li>
+                    <li>Giảm thiệt hại từ các sự cố</li>
+                    <li>Tuân thủ các quy định pháp lý</li>
+                    <li>Bảo vệ danh tiếng công ty</li>
+                </ul>
+
+                <h2>Các Giai Đoạn Incident Response</h2>
+                <h3>1. Preparation (Chuẩn Bị)</h3>
+                <ul>
+                    <li>Xây dựng incident response team</li>
+                    <li>Tạo playbooks và procedures</li>
+                    <li>Triển khai monitoring tools</li>
+                    <li>Đào tạo nhân viên</li>
+                </ul>
+
+                <h3>2. Detection & Analysis (Phát Hiện & Phân Tích)</h3>
+                <ul>
+                    <li>Phát hiện sự cố (IDS/IPS, SIEM, logs)</li>
+                    <li>Xác nhận sự cố là thật hay false positive</li>
+                    <li>Phân tích mức độ nghiêm trọng (severity level)</li>
+                    <li>Tạo ticket/case</li>
+                </ul>
+
+                <h3>3. Containment (Khoanh Vùng)</h3>
+                <ul>
+                    <li><strong>Short-term containment:</strong> Dừng cuộc tấn công ngay</li>
+                    <li><strong>Long-term containment:</strong> Áp dụng patch, cập nhật cấu hình</li>
+                    <li>Cô lập hệ thống bị ảnh hưởng</li>
+                    <li>Tránh mất dữ liệu bằng chứng</li>
+                </ul>
+
+                <h3>4. Eradication (Loại Bỏ)</h3>
+                <ul>
+                    <li>Xóa malware, backdoors, unauthorized access</li>
+                    <li>Patch lỗ hổng</li>
+                    <li>Xác minh hoàn toàn loại bỏ threat</li>
+                </ul>
+
+                <h3>5. Recovery (Phục Hồi)</h3>
+                <ul>
+                    <li>Khôi phục hệ thống từ backup sạch</li>
+                    <li>Khôi phục dữ liệu</li>
+                    <li>Kiểm tra hệ thống hoạt động bình thường</li>
+                    <li>Tăng cường monitoring sau phục hồi</li>
+                </ul>
+
+                <h3>6. Post-Incident Activities (Sau Sự Cố)</h3>
+                <ul>
+                    <li>Tạo incident report</li>
+                    <li>Phân tích nguyên nhân gốc (RCA)</li>
+                    <li>Lập kế hoạch cải thiện (lessons learned)</li>
+                    <li>Cập nhật procedures và tools</li>
+                </ul>
+
+                <h2>Incident Classification</h2>
+                <table style="width:100%; border-collapse: collapse;">
+                    <tr style="border: 1px solid #ccc;">
+                        <th style="border: 1px solid #ccc; padding: 10px;">Level</th>
+                        <th style="border: 1px solid #ccc; padding: 10px;">Mô Tả</th>
+                        <th style="border: 1px solid #ccc; padding: 10px;">Ví Dụ</th>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Critical</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Ảnh hưởng toàn bộ tổ chức</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Data breach lớn, ransomware</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">High</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Ảnh hưởng tới một phòng ban</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Unauthorized access</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Medium</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Ảnh hưởng tới một số người</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Phishing attempt</td>
+                    </tr>
+                    <tr style="border: 1px solid #ccc;">
+                        <td style="border: 1px solid #ccc; padding: 10px;">Low</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Ảnh hưởng tối thiểu</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Suspicious log entry</td>
+                    </tr>
+                </table>
+
+                <h2>Best Practices</h2>
+                <ul>
+                    <li>Có sẵn incident response plan</li>
+                    <li>Thực tập tabletop exercises định kỳ</li>
+                    <li>Ghi log chi tiết tất cả hoạt động</li>
+                    <li>Có contact list của các bên liên quan</li>
+                    <li>Đảm bảo communication smooth giữa các team</li>
+                </ul>
+
+                <h2>Kết Luận</h2>
+                <p>Incident Response không phải là "nếu" mà là "khi nào". Chuẩn bị tốt trước sẽ giúp tổ chức phản ứng nhanh và hiệu quả khi sự cố xảy ra.</p>
+
+                <div class="blog-tags">
+                    <span class="tag">Incident Response</span>
+                    <span class="tag">SOC</span>
+                    <span class="tag">Emergency</span>
+                </div>
+
+                <div class="blog-navigation">
+                    <a href="blog.html" class="btn-back">← Quay lại Blog</a>
+                </div>
+
+                <!-- RELATED POSTS -->
+                <section class="related-posts">
+                    <h2>Bài Blog Liên Quan</h2>
+                    <div class="related-posts-grid">
+                        <div class="related-post-card">
+                            <h3>Network Monitoring & IDS</h3>
+                            <p>Phát hiện sự cố sớm thông qua network monitoring.</p>
+                            <a href="network-monitoring.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Wazuh - Detection & Response</h3>
+                            <p>Sử dụng Wazuh để tự động hóa detection và response cho sự cố.</p>
+                            <a href="wazuh.html">Đọc Tiếp →</a>
+                        </div>
+                        <div class="related-post-card">
+                            <h3>Vulnerability Assessment</h3>
+                            <p>Tìm lỗ hổng để phòng ngừa incidents trước khi chúng xảy ra.</p>
+                            <a href="vulnerability-assessment.html">Đọc Tiếp →</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

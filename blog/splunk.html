@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splunk - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ARTICLE -->
+    <article class="blog-article">
+        <div class="article-header">
+            <h1>Phân Tích Log Bảo Mật Với Splunk: Hướng Dẫn Chi Tiết</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 23 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 10 phút đọc</span>
+            </div>
+            <div class="article-tags">
+                <span>#Splunk</span>
+                <span>#LogAnalysis</span>
+                <span>#Security</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <h2>Giới Thiệu Về Splunk</h2>
+            <p>Splunk là một nền tảng phần mềm mạnh mẽ được sử dụng để thu thập, lập chỉ mục, và phân tích các logs từ hàng ngàn nguồn dữ liệu. Trong lĩnh vực bảo mật thông tin, Splunk đóng vai trò quan trọng trong việc phát hiện các mối đe dọa tiềm ẩn và phản ứng nhanh chóng với các sự cố bảo mật.</p>
+
+            <h2>Tại Sao Cần Phân Tích Log?</h2>
+            <p>Logs chứa thông tin quý báu về các hoạt động trên hệ thống. Bằng cách phân tích logs, chúng ta có thể:</p>
+            <ul>
+                <li>Phát hiện các hoạt động đáng ngờ</li>
+                <li>Theo dõi các cuộc tấn công tiềm ẩn</li>
+                <li>Kiểm toán và xác minh tuân thủ</li>
+                <li>Phân tích nguyên nhân gốc rễ của các sự cố</li>
+            </ul>
+
+            <h2>Các Tính Năng Chính Của Splunk</h2>
+            <h3>1. Thu Thập Dữ Liệu (Data Collection)</h3>
+            <p>Splunk có khả năng thu thập dữ liệu từ nhiều nguồn khác nhau như syslog, Windows Event Logs, ứng dụng web, thiết bị mạng, v.v.</p>
+
+            <h3>2. Lập Chỉ Mục (Indexing)</h3>
+            <p>Sau khi thu thập, Splunk sẽ lập chỉ mục dữ liệu để cho phép tìm kiếm nhanh chóng và hiệu quả.</p>
+
+            <h3>3. Tìm Kiếm và Phân Tích (Search & Analysis)</h3>
+            <p>Bạn có thể viết các truy vấn Splunk Query Language (SPL) để tìm kiếm và phân tích logs theo nhiều cách khác nhau.</p>
+
+            <h3>4. Visualization</h3>
+            <p>Splunk cung cấp các công cụ trực quan hóa mạnh mẽ giúp bạn hiểu dữ liệu tốt hơn.</p>
+
+            <h2>Bắt Đầu Với Splunk</h2>
+            <h3>Bước 1: Cài Đặt Splunk</h3>
+            <p>Bạn có thể tải xuống phiên bản miễn phí từ trang web Splunk. Splunk Free có nhiều tính năng tuyệt vời, nhưng có giới hạn về dung lượng dữ liệu.</p>
+
+            <h3>Bước 2: Cấu Hình Nguồn Dữ Liệu</h3>
+            <p>Sau khi cài đặt, bạn cần cấu hình các nguồn dữ liệu mà bạn muốn Splunk giám sát.</p>
+
+            <h3>Bước 3: Tạo Dashboards và Alerts</h3>
+            <p>Tạo các dashboard để theo dõi các chỉ số quan trọng và cấu hình alerts để thông báo khi có điều gì đó bất thường.</p>
+
+            <h2>Ví Dụ Thực Tế</h2>
+            <p>Dưới đây là một ví dụ về cách sử dụng Splunk để phát hiện các cố gắng login không thành công:</p>
+            <p><code>index=main source=*auth* action=failure | stats count by user</code></p>
+            <p>Truy vấn này sẽ đếm số lần login không thành công cho mỗi người dùng, giúp bạn phát hiện các cố gắng brute force.</p>
+
+            <h2>Kết Luận</h2>
+            <p>Splunk là một công cụ mạnh mẽ cho phân tích logs và phát hiện mối đe dọa. Bằng cách hiểu rõ về Splunk và cách sử dụng nó, bạn sẽ có khả năng bảo vệ hệ thống của mình tốt hơn.</p>
+        </div>
+
+        <!-- RELATED POSTS -->
+        <section class="related-posts">
+            <h2>Bài Blog Liên Quan</h2>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h3>Wazuh: Nền Tảng XDR Toàn Diện</h3>
+                    <p>Khám phá Wazuh - công cụ SIEM mạnh mẽ với khả năng XDR toàn diện và tự động hóa phát hiện mối đe dọa.</p>
+                    <a href="wazuh.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>Network Monitoring & IDS/IPS</h3>
+                    <p>Tìm hiểu về giám sát mạng, IDS/IPS và cách phát hiện các mối đe dọa trên mạng của bạn.</p>
+                    <a href="network-monitoring.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>Incident Response & Management</h3>
+                    <p>Học cách quản lý và phản ứng với các sự cố bảo mật một cách hiệu quả.</p>
+                    <a href="incident-response.html">Đọc Tiếp →</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="article-navigation">
+            <a href="blog.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Quay Lại Blog</a>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>SOC Engineer & Security Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym?locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

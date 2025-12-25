@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wazuh - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html">Dự Án</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ARTICLE -->
+    <article class="blog-article">
+        <div class="article-header">
+            <h1>Wazuh: Nền Tảng XDR Toàn Diện Cho Bảo Mật</h1>
+            <div class="article-meta">
+                <span><i class="fas fa-user"></i> Phạm Tiến Đồng</span>
+                <span><i class="fas fa-calendar"></i> 21 Thán 12, 2025</span>
+                <span><i class="fas fa-clock"></i> 12 phút đọc</span>
+            </div>
+            <div class="article-tags">
+                <span>#Wazuh</span>
+                <span>#XDR</span>
+                <span>#Security</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <h2>Giới Thiệu Về Wazuh</h2>
+            <p>Wazuh là một nền tảng XDR (Extended Detection and Response) toàn diện, được thiết kế để cung cấp phát hiện mối đe dọa, phòng chống, phản ứng và tuân thủ. Nó là một giải pháp mã nguồn mở mạnh mẽ, được tin tưởng bởi các tổ chức trên toàn thế giới.</p>
+
+            <h2>Các Tính Năng Chính Của Wazuh</h2>
+            
+            <h3>1. Agent-Based Monitoring</h3>
+            <p>Wazuh sử dụng các agent được triển khai trên các endpoint để thu thập dữ liệu chi tiết về hoạt động hệ thống. Điều này cho phép Wazuh có cái nhìn sâu sắc về những gì đang xảy ra trên từng máy.</p>
+
+            <h3>2. Threat Detection</h3>
+            <p>Wazuh sử dụng các quy tắc phát hiện mối đe dọa được phát triển bởi các chuyên gia bảo mật để xác định các hoạt động đáng ngờ. Nó có thể phát hiện:</p>
+            <ul>
+                <li>Mã độc (Malware)</li>
+                <li>Cố gắng xâm nhập trái phép</li>
+                <li>Hoạt động bất thường</li>
+                <li>Sửa đổi tệp không được phép</li>
+            </ul>
+
+            <h3>3. Compliance Monitoring</h3>
+            <p>Wazuh cung cấp các mô-đun để giám sát tuân thủ các tiêu chuẩn như PCI DSS, HIPAA, GDPR, v.v.</p>
+
+            <h3>4. Vulnerability Detection</h3>
+            <p>Wazuh có thể phát hiện các lỗ hổng bảo mật trên các hệ thống được theo dõi.</p>
+
+            <h3>5. Incident Response</h3>
+            <p>Khi phát hiện một sự cố, Wazuh có thể tự động thực hiện các hành động phản ứng như cách ly máy hoặc ngăn chặn quy trình.</p>
+
+            <h2>Kiến Trúc của Wazuh</h2>
+            <p>Wazuh bao gồm ba thành phần chính:</p>
+            
+            <h3>1. Wazuh Agent</h3>
+            <p>Agent chạy trên các endpoint (Windows, Linux, macOS) và thu thập dữ liệu. Nó gửi dữ liệu này đến Wazuh Manager theo cách được mã hóa.</p>
+
+            <h3>2. Wazuh Manager</h3>
+            <p>Manager nhận dữ liệu từ các agent, phân tích nó, và sinh ra các cảnh báo khi có vấn đề.</p>
+
+            <h3>3. Elastic Stack</h3>
+            <p>Wazuh sử dụng Elasticsearch, Kibana, và các thành phần khác từ Elastic Stack để lưu trữ và trực quan hóa dữ liệu.</p>
+
+            <h2>Ưu Điểm Của Wazuh</h2>
+            <ul>
+                <li><strong>Mã Nguồn Mở:</strong> Wazuh là mã nguồn mở, có nghĩa là bạn có thể tùy chỉnh nó theo nhu cầu của mình.</li>
+                <li><strong>Linh Hoạt:</strong> Wazuh có thể được triển khai trên các môi trường khác nhau (on-premises, cloud, hybrid).</li>
+                <li><strong>Khả Năng Mở Rộng:</strong> Bạn có thể thêm các plugin và mô-đun tùy chỉnh.</li>
+                <li><strong>Chi Phí Thấp:</strong> Wazuh là miễn phí, giúp giảm chi phí bảo mật.</li>
+            </ul>
+
+            <h2>Các Trường Hợp Sử Dụng</h2>
+            
+            <h3>1. Giám Sát Bảo Mật Chủ Động</h3>
+            <p>Sử dụng Wazuh để giám sát liên tục các hệ thống của bạn và phát hiện các mối đe dọa sớm.</p>
+
+            <h3>2. Phản Ứng Sự Cố</h3>
+            <p>Khi xảy ra sự cố bảo mật, Wazuh có thể cung cấp thông tin chi tiết để giúp bạn phản ứng nhanh chóng.</p>
+
+            <h3>3. Tuân Thủ Quy Định</h3>
+            <p>Wazuh có thể giúp bạn chứng minh tuân thủ các tiêu chuẩn bảo mật và quy định.</p>
+
+            <h2>Bắt Đầu Với Wazuh</h2>
+            <p>Bạn có thể bắt đầu với Wazuh bằng cách:</p>
+            <ol>
+                <li>Tải xuống Wazuh từ trang web chính thức</li>
+                <li>Cài đặt Wazuh Manager trên một máy chủ</li>
+                <li>Cài đặt Wazuh Agent trên các endpoint mà bạn muốn giám sát</li>
+                <li>Cấu hình các quy tắc và chính sách bảo mật</li>
+                <li>Bắt đầu giám sát</li>
+            </ol>
+
+            <h2>Kết Luận</h2>
+            <p>Wazuh là một nền tảng bảo mật mạnh mẽ và toàn diện, phù hợp cho các tổ chức có nhu cầu giám sát và phát hiện mối đe dọa nâng cao. Với tính năng mã nguồn mở và chi phí thấp, Wazuh là một lựa chọn tuyệt vời cho các tổ chức muốn cải thiện posture bảo mật của mình.</p>
+        </div>
+
+        <!-- RELATED POSTS -->
+        <section class="related-posts">
+            <h2>Bài Blog Liên Quan</h2>
+            <div class="related-posts-grid">
+                <div class="related-post-card">
+                    <h3>Splunk vs Wazuh: So Sánh</h3>
+                    <p>So sánh chi tiết hai công cụ SIEM hàng đầu Splunk và Wazuh để giúp bạn chọn giải pháp phù hợp.</p>
+                    <a href="splunk.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>N8N Automation</h3>
+                    <p>Khám phá N8N - công cụ tự động hóa workflow không cần code tích hợp với Wazuh.</p>
+                    <a href="n8n.html">Đọc Tiếp →</a>
+                </div>
+                <div class="related-post-card">
+                    <h3>Zero Trust Security Model</h3>
+                    <p>Tìm hiểu mô hình Zero Trust và cách triển khai nó trong kiến trúc bảo mật hiện đại.</p>
+                    <a href="zero-trust-security.html">Đọc Tiếp →</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="article-navigation">
+            <a href="blog.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Quay Lại Blog</a>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>SOC Engineer & Security Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/husstymtym?locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:phamtiendong6795@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
