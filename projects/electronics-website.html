@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Bán Thiết Bị Điện Tử - Phạm Tiến Đồng</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .project-detail-section {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .project-detail-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        .project-detail-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .project-detail-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .project-detail-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .project-detail-content {
+            line-height: 1.8;
+            color: #444;
+        }
+        .project-detail-content h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .project-detail-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .project-detail-content li {
+            margin: 10px 0;
+        }
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .tag {
+            background: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .project-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+        .project-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        .project-gallery {
+            margin-top: 40px;
+            padding: 20px 0;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-placeholder {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #cbd5e1;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PTĐ</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="../about.html">Giới Thiệu</a></li>
+                <li><a href="../projects.html" class="active">Dự Án</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
+                <li><a href="../contact.html">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PROJECT DETAIL SECTION -->
+    <section class="project-detail-section">
+        <div class="project-detail-container">
+            <a href="../projects.html" class="back-link"><i class="fas fa-arrow-left"></i> Quay Lại</a>
+            
+            <div class="project-detail-header">
+                <h1>Website Bán Thiết Bị Điện Tử</h1>
+                <p>Nền Tảng Thương Mại Điện Tử cho Thiết Bị Điện Tử</p>
+            </div>
+
+            <div class="project-detail-content">
+                <h2>Tổng Quan Dự Án</h2>
+                <p>
+                    Dự án này là một website thương mại điện tử được phát triển bằng Java, chuyên về bán 
+                    các thiết bị điện tử. Website cung cấp giao diện thân thiện, tìm kiếm sản phẩm hiệu quả 
+                    và quy trình thanh toán nhanh chóng.
+                </p>
+
+                <h2>Các Tính Năng Chính</h2>
+                <ul>
+                    <li>Danh sách sản phẩm với hình ảnh và mô tả chi tiết</li>
+                    <li>Tìm kiếm và lọc sản phẩm theo danh mục</li>
+                    <li>Giỏ hàng và quản lý sản phẩm</li>
+                    <li>Thanh toán online bảo mật</li>
+                    <li>Quản lý đơn hàng và lịch sử mua hàng</li>
+                    <li>Hệ thống đánh giá và bình luận sản phẩm</li>
+                    <li>Tài khoản người dùng với quản lý thông tin</li>
+                    <li>Admin panel để quản lý sản phẩm và đơn hàng</li>
+                </ul>
+
+                <h2>Công Nghệ Sử Dụng</h2>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">E-commerce</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Web</span>
+                </div>
+
+                <h2>Kiến Trúc Website</h2>
+                <ul>
+                    <li>Frontend: HTML, CSS, JavaScript hoặc framework như React/Vue</li>
+                    <li>Backend: Java Spring Boot framework</li>
+                    <li>Database: MySQL hoặc PostgreSQL</li>
+                    <li>Thanh toán: Integration với gateway thanh toán</li>
+                    <li>Quản lý tài khoản: JWT authentication</li>
+                    <li>API: RESTful API cho các tương tác</li>
+                </ul>
+
+                <h2>Tính Năng Người Dùng</h2>
+                <ul>
+                    <li>Duyệt và tìm kiếm thiết bị điện tử</li>
+                    <li>Xem chi tiết sản phẩm, giá cả, tình trạng kho</li>
+                    <li>Thêm vào giỏ hàng và thanh toán</li>
+                    <li>Theo dõi đơn hàng</li>
+                    <li>Đánh giá và viết bình luận về sản phẩm</li>
+                </ul>
+
+                <h2>Tính Năng Admin</h2>
+                <ul>
+                    <li>Thêm, chỉnh sửa, xóa sản phẩm</li>
+                    <li>Quản lý danh mục sản phẩm</li>
+                    <li>Xem và cập nhật đơn hàng</li>
+                    <li>Quản lý người dùng</li>
+                    <li>Báo cáo doanh thu</li>
+                </ul>
+
+                
+            </div>
+
+            <div class="project-gallery">
+                <h2>Hình Ảnh Ứng Dụng</h2>
+                <div class="gallery-container">
+                    
+                </div>
+                <p style="color: #999; font-size: 0.9rem; margin-top: 15px; text-align: center;">
+                    
+                </p>
+            </div>
+            <h2>Liên Kết & Tài Nguyên</h2>
+                <div class="project-links">
+                    <a href="https://github.com/TienDong-Huss" target="_blank">
+                        <i class="fab fa-github"></i> Xem Mã Nguồn
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Phạm Tiến Đồng</h4>
+                <p>Cybersecurity & Automation Specialist</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Kết Nhanh</h4>
+                <div class="quick-links-icons">
+                    <a href="../about.html" title="Giới Thiệu"><i class="fas fa-user"></i></a>
+                    <a href="../projects.html" title="Dự Án"><i class="fas fa-briefcase"></i></a>
+                    <a href="../blog/blog.html" title="Blog"><i class="fas fa-blog"></i></a>
+                    <a href="../contact.html" title="Liên Hệ"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Kết Nối</h4>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phạm Tiến Đồng.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
